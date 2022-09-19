@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body{
+            background-image: url(images/pizza2.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+        }
+        .edu td, .edu th{
+            border: 2px solid black;
+        }
+        .submit{
+            display: block;
+            margin: 0 40%;
+            width: 130px;
+            height: 30px;
+            background-color: grey;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2 style="font-weight: 400; color: darkgray; margin-left: 80px;">Submit Your Resume</h2>
+        <form action="">
+            <fieldset style="width: 400px;">
+                <legend style="color: darkgray;">Personal Details</legend>
+                <table>
+                    <tr>
+                        <td>*First Name:</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="Enter your first name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Middle Name:</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="Enter your middle name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Last Name:</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="Enter your last name" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td style="padding-left: 30px;">
+                            <input type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Age in Years</td>
+                        <td style="padding-left: 30px;">
+                            <input type="number" placeholder="<30&>18">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td style="padding-left: 25px;">
+                            <input type="radio" name="male" value="male" id="male">
+                            <label for="male">Male</label>
+                            <input type="radio" name="female" value="female" id="female">
+                            <label for="female">Female</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <progress value="20" max="100"></progress> 20% out of 100%
+
+        <form action="">
+            <fieldset style="width: 400px;">
+                <legend style="color: darkgray;">Address Details</legend>
+                <table>
+                    <tr>
+                        <td>Address</td>
+                        <td style="padding-left: 30px;">
+                            <textarea name="area" id="area" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>City/Town</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>State</td>
+                        <td  style="padding-left: 30px;">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Zip Code</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text"  placeholder="only 6 numbers" pattern="[0-9]{6}">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <progress value="40" max="100"></progress> 40% out of 100%
+
+        <form action="">
+            <fieldset style="width: 400px;">
+                <legend style="color: darkgray;">Contact Information</legend>
+                <table>
+                    <tr>
+                        <td>Telephone</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="(044) 999-9999">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Mobile</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="(+91) 99999-99999" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>*Email</td>
+                        <td style="padding-left: 30px;">
+                            <input type="text" placeholder="valid email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td style="padding-left: 30px;">
+                            <input type="url" placeholder="valid url">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <progress value="60" max="100"></progress> 60% out of 100%
+
+        <form action="">
+            <fieldset style="width: 400px;">
+                <legend style="color: darkgray;">Educational Details</legend>
+                <table class="edu">
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Board/University</th>
+                        <th>Country</th>
+                        <th>Starting Year</th>
+                        <th>Ending Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">10th</td>         
+                        <td><input type="text" placeholder="Board/University"></td>
+                        <td>
+                            <select>
+                                <option value="choose">Choose</option>
+                                <option value="ind">India</option>
+                                <option value="us">US</option>
+                                <option value="nz">New Zealand</option>
+                                <option value="sa">South Africa</option>
+                            </select>
+                        </td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">12th</td>         
+                        <td><input type="text" placeholder="Board/University"></td>
+                        <td>
+                            <select>
+                                <option value="choose">Choose</option>
+                                <option value="ind">India</option>
+                                <option value="us">US</option>
+                                <option value="nz">New Zealand</option>
+                                <option value="sa">South Africa</option>
+                            </select>
+                        </td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">B.Tech</td>         
+                        <td><input type="text" placeholder="Board/University"></td>
+                        <td>
+                            <select>
+                                <option value="choose">Choose</option>
+                                <option value="ind">India</option>
+                                <option value="us">US</option>
+                                <option value="nz">New Zealand</option>
+                                <option value="sa">South Africa</option>
+                            </select>
+                        </td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox">M.Tech</td>         
+                        <td><input type="text" placeholder="Board/University"></td>
+                        <td>
+                            <select>
+                                <option value="choose">Choose</option>
+                                <option value="ind">India</option>
+                                <option value="us">US</option>
+                                <option value="nz">New Zealand</option>
+                                <option value="sa">South Africa</option>
+                            </select>
+                        </td>
+                        <td><input type="date"></td>
+                        <td><input type="date"></td>
+                        <td><input type="number" placeholder="70" style="width:40px; margin-left: 10px;"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+        <progress value="80" max="100"></progress> 80% out of 100%
+
+        <form action="">
+            <fieldset style="width: 700px;">
+                Attach your resume in .doc or .pdf format
+                <input type="file" style="border: 1px solid black; margin-left: 20px;"><br><br>
+                <input type="checkbox">I filled all the details
+            </fieldset>
+        </form>
+        <progress value="100" max="100"></progress> 100% out of 100%
+
+        <button class="submit">Submit</button>
+    </div>
+</body>
+</html>

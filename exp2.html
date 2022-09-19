@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            min-height: 90vh;
+            width: 100%;
+            color: black;
+        }
+        .logo{
+            width: 130px;
+            border-radius: 10px;
+        }
+        .head{
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .company{
+            font-size: 20px;
+            margin-left: 30px;
+            color: #010308;
+            letter-spacing: 2px;
+        }
+        .nav ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .nav li{
+            list-style: none;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: darkgrey;
+            font-weight: 700;
+        }
+        .content{
+            display: flex;
+            justify-content: space-around;
+            margin: 30px;
+            padding: 20px;
+        }
+        .about-content{
+            width: 50%;
+            margin-right: 70px;
+        }
+        button{
+            width: 90px;
+            margin-left: 80px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        button a{
+            text-decoration: none;
+        }
+        footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 30px;
+        }
+        .contact-us h4{
+            font-weight: 400;
+            line-height: 2;
+        }
+        .contact-us h2{
+            color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="head">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="logo">
+                </div>
+                <div class="company">
+                    <h2>Blue eye 10</h2>
+                </div>
+            </div>
+        </header>
+        <div class="nav">
+            <hr>
+            <ul>
+                <a href="EXP2.html"> link1 </a>
+                <li style="font-weight: 800;">|</li>
+                <a href="ex2.html"> link2</a>
+                <li style="font-weight: 800;">|</li>
+                <li><a href="EX2.1.html">link 3</a></li>
+                <li style="font-weight: 800;">|</li>
+                <input type="text" placeholder="Search" style="border: 1px solid black;">
+            </ul>
+            <hr>
+        </div>
+        <div class="content">
+            <div class="video">
+                <video width="400" controls>
+                    <source src="images/videoplayback (1).mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="about-content">
+                <p>  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ut necessitatibus ipsam natus nihil commodi voluptatem similique repellat aliquam dolores! Id quas vel delectus corrupti harum nisi numquam adipisci ea.</p>
+                <audio controls style="margin-top: 30px;">
+                    <source src="images/videoplayback (1).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+        <hr>
+        <footer>
+            <div class="sign">
+                <form class="sign-up">
+                    <fieldset style="width: 350px;">
+                        <legend style="color: darkgray;">Sign Up</legend><br>
+                        *User name: <input type="text" placeholder="username" required><br><br>
+                        *Password: <input type="text" placeholder="password" required style="margin-left: 5px;"><br>
+                        <button><a href="EX2.1.html">Register</a></button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="contact-us">
+                <h2>Contact us</h2>
+                <h4>
+                    2nd Street<br>Hanuman Temple Rd, Nagasundari Residency,<br>Pedakallepalli, Mopidevi, AndhraPradesh,521130<br>
+                    mail id: <a href="#" style="color: #3a0ca3;">BlueEye10@company.com</a><br>
+                    Phone no: <a href="#" style="color: #3a0ca3;">(+91) (12345 12345)</a>
+                </h4>    
+            </div>
+            <div class="map">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="352" height="213" id="gmap_canvas" src="https://maps.google.com/maps?q=Express%20Avenue%20Mall,%20Whites%20Rd,%20Express%20Estate,%20Royapettah,%20Chennai,%20Tamil%20Nadu%20600014&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:213px;width:352px;}</style><a href="https://www.embedgooglemap.net">add google map to website</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:213px;width:352px;}</style></div></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
