@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Ex6.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">URK20CS1143</a></li>
+            <li><a href="#ques-1">Question 1</a></li>
+            <li><a href="#ques-2">Question 2</a></li>
+            <li><a href="#ques-3">Question 3</a></li>
+            <li><a href="#ques-4">Question 4</a></li>
+            <li><a href="#ques-5">Question 5</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="ques-1">
+            <h1>Digital Clock</h1>
+            <div id="time" class="time-box"></div>
+            <button onclick="start()">Start</button>
+        </div>
+    </section>
+
+    <section>
+        <div id="ques-2">
+            <h1>Changing Colors</h1>
+            <div class="dynamic_bg" onload="color_ch()"></div>
+        </div>
+    </section>
+
+    <section>
+        <div id="ques-3">
+            <h1>Changing Font Size</h1>
+            <p id="para1" onmouseover="incSize()" onmouseout="decSize()">move cursor over me to zoom in...</p>
+        </div>
+    </section>
+
+    <section>
+        <div id="ques-4">
+            <h1>Move Car</h1>
+            <div class="box">
+                <img src="road....jpg" class="road-img" id="r-img">
+                <img src="car.jpg" class="car-img" id="c-img">
+            </div>
+            <!-- method1 -->
+            <button onclick="init(); moveRight();">Move</button>
+            <button onclick="stop()">Stop</button>
+
+            <!-- method2 -->
+            <!-- <button onclick="start()">Start</button>
+            <button onclick="moveRight();">Move</button>
+            <button onclick="stop()">Stop</button> -->
+        </div>
+    </section>
+
+    <section>
+        <div id="ques-5">
+            <h1>Student Details</h1>
+            <button onclick="student()">Show Student Details</button>
+            <span id="stu1" class="stud"></span>
+            <span id="stu2" class="stud"></span>
+        </div>
+    </section>
+
+    <script src="ex6.js"></script>
+</body>
+
+</html>
