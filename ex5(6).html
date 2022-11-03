@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifth</title>
+    <script src="ex5script.js"></script>
+    <link rel="shortcut icon" href="media/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <fieldset>
+        <legend><h1>Birthday Cake Order Form</h1></legend>
+        # 1/2kg Cakes:&nbsp; <input type="text" id="small"><br><br> 
+        # 1kg Cakes:&nbsp; <input type="text" id="medium"><br><br>
+        # 2kg Cakes:&nbsp; <input type="text" id="large"><br><br> 
+        Tip: 
+        <label><input type="radio" value="10" name="tip">10%</label> 
+        <label><input type="radio" value="15" name="tip" checked="checked">15%</label>
+        <label><input type="radio" value="20" name="tip">20%</label><br><br> 
+        <button id="submit" onclick="bill()">Calculate price</button><br><br>
+        <span id="price"></span><br><br>
+        <a href="fifth.html">Previous question!</a>
+    </fieldset>
+</body>
+</html>
